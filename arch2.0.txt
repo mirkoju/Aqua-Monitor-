@@ -1,0 +1,63 @@
+#include <WiFi.h>
+#include <HTTPClient.h>
+
+// --- Datos WiFi ---
+const char* ssid = "LABO";
+const char* password = "";
+
+// --- Dirección del servidor (CAMBIÁ la IP por la de tu PC con XAMPP) ---
+String serverName = "http://192.168.1.120/recibir.php";
+
+// --- Pines del sensor JSN-SR04T ---
+const int trigPin = 19; 
+const int echoPin = 18;
+
+long duracion;
+int distancia;
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+
+  // Conexión WiFi
+WiFi.begin(ssid, password);
+while (WiFi.status() != WL_CONNECTED) {
+  delay(500);
+  Serial.println("Conectando a WiFi...");
+}
+Serial.println("Conectado a WiFi!");
+Serial.print("IP asignada: ");
+Serial.println(WiFi.localIP());
+}
+void loop() {
+  // --- Medición ---
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  duracion = pulseIn(echoPin, HIGH);
+  distancia = duracion * 0.034 / 2;
+
+  Serial.print("Distancia: ");
+  Serial.println(distancia);
+
+  // --- Enviar datos al servidor ---
+  if (WiFi.status() == WL_CONNECTED) {
+    HTTPClient http;
+    String url = serverName + "?distancia=" + String(distancia);
+    http.begin(url);
+    int httpResponseCode = http.GET();
+
+    if (httpResponseCode > 0) {
+      Serial.println("Datos enviados!");
+    } else {
+      Serial.print("Error en envío: ");
+      Serial.println(httpResponseCode);
+    }
+    http.end();
+  }
+  delay(2000); // cada 2 segundos
+}

@@ -1,0 +1,199 @@
+#include <WiFi.h>
+#include <HTTPClient.h>
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
+
+// --- Datos WiFi ---
+const char* ssid = "pipi";
+const char* password = "20072007";
+
+// --- Dirección del servidor ---
+String serverName = "http://192.168.0.194/recibir.php";
+
+// --- Pines del sensor JSN-SR04T ---
+// Tanque 1
+const int trigPin1 = 17;
+const int echoPin1 = 16;
+// Tanque 2
+const int trigPin2 = 19;
+const int echoPin2 = 18;
+// Tanque 3
+const int trigPin3 = 27;
+const int echoPin3 = 14;
+
+// --- Configuración del LCD ---
+LiquidCrystal_I2C lcd(0x27, 16, 2); // Dirección I2C 0x27, LCD 16x2
+
+// --- Parámetros del tanque ---
+const float alturaSensorLlena = 20.0;  // Sensor mide 20 cm cuando está lleno
+const float alturaSensorVacia  = 65.0; // Sensor mide 65 cm cuando está vacío
+const float alturaTacho        = 45.0; // Altura real del tacho en cm
+const float volumenTachoLitros = 20.0; // Capacidad real del tacho en litros
+
+// --- Variables por tanque ---
+float distancia1 = 0.0, distancia2 = 0.0, distancia3 = 0.0;
+float porcentaje1 = 0.0, porcentaje2 = 0.0, porcentaje3 = 0.0;
+float litros1 = 0.0, litros2 = 0.0, litros3 = 0.0;
+
+// Timeout para pulseIn
+const unsigned long PULSE_TIMEOUT = 30000UL;
+
+void setup() {
+  Serial.begin(115200);
+
+  pinMode(trigPin1, OUTPUT);
+  pinMode(echoPin1, INPUT);
+  pinMode(trigPin2, OUTPUT);
+  pinMode(echoPin2, INPUT);
+  pinMode(trigPin3, OUTPUT);
+  pinMode(echoPin3, INPUT);
+
+  // Inicializar LCD
+  lcd.begin();
+  lcd.backlight();
+  lcd.setCursor(0, 0);
+  lcd.print("Iniciando...");
+  delay(1500);
+  lcd.clear();
+
+  // Conexión WiFi
+  WiFi.mode(WIFI_STA);
+  WiFi.setAutoReconnect(true);
+  WiFi.persistent(true);
+  WiFi.begin(ssid, password);
+
+  lcd.setCursor(0,0);
+  lcd.print("Conectando WiFi");
+  Serial.print("Conectando a WiFi");
+
+  const unsigned long wifiTimeout = 10000UL;
+  unsigned long startAttemptTime = millis();
+  while (WiFi.status() != WL_CONNECTED && millis() - startAttemptTime < wifiTimeout) {
+    delay(500);
+    Serial.print(".");
+    lcd.print(".");
+  }
+
+  Serial.println();
+  if (WiFi.status() == WL_CONNECTED) {
+    Serial.println("Conectado a WiFi!");
+    Serial.print("IP: "); Serial.println(WiFi.localIP());
+    lcd.clear();
+    lcd.setCursor(0,0);
+    lcd.print("WiFi Conectado");
+    lcd.setCursor(0,1);
+    lcd.print(WiFi.localIP().toString());
+  } else {
+    Serial.println("No se pudo conectar a WiFi");
+    lcd.clear();
+    lcd.setCursor(0,0);
+    lcd.print("WiFi NO Conn");
+    lcd.setCursor(0,1);
+    lcd.print("Reintentar...");
+  }
+  delay(1500);
+  lcd.clear();
+}
+
+// --- Función para medir distancia ---
+float medirDistancia(int trigPin, int echoPin) {
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  unsigned long dur = pulseIn(echoPin, HIGH, PULSE_TIMEOUT);
+  if (dur == 0) {
+    return alturaSensorVacia + 5.0; // Sin eco -> vacío
+  }
+  float dist = (dur * 0.034) / 2.0;
+  return dist;
+}
+
+// --- Función para calcular porcentaje y litros ---
+void calcularLlenado(float distancia, float &porcentaje, float &litros) {
+  if (distancia <= alturaSensorLlena) {
+    porcentaje = 100.0;
+    litros = volumenTachoLitros;
+  } else if (distancia >= alturaSensorVacia) {
+    porcentaje = 0.0;
+    litros = 0.0;
+  } else {
+    float alturaAgua = distancia - alturaSensorLlena;
+    porcentaje = 100.0 - ((alturaAgua / alturaTacho) * 100.0);
+    porcentaje = constrain(porcentaje, 0.0, 100.0);
+    litros = (porcentaje / 100.0) * volumenTachoLitros;
+  }
+}
+
+void loop() {
+  // Medir los tres tanques
+  distancia1 = medirDistancia(trigPin1, echoPin1);
+  delay(50);
+  distancia2 = medirDistancia(trigPin2, echoPin2);
+  delay(50);
+  distancia3 = medirDistancia(trigPin3, echoPin3);
+
+  // Calcular llenado
+  calcularLlenado(distancia1, porcentaje1, litros1);
+  calcularLlenado(distancia2, porcentaje2, litros2);
+  calcularLlenado(distancia3, porcentaje3, litros3);
+
+  // Mostrar por Serial
+  Serial.print("T1: "); Serial.print(porcentaje1,1);
+  Serial.print("% | T2: "); Serial.print(porcentaje2,1);
+  Serial.print("% | T3: "); Serial.print(porcentaje3,1);
+  Serial.println("%");
+
+  // --- Mostrar los porcentajes de los tres tanques en el LCD ---
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("T1:"); lcd.print((int)porcentaje1); lcd.print("% ");
+  lcd.print("T2:"); lcd.print((int)porcentaje2); lcd.print("%");
+
+  lcd.setCursor(0, 1);
+  lcd.print("T3:"); lcd.print((int)porcentaje3); lcd.print("%");
+
+  // --- Reintento de conexión WiFi ---
+  if (WiFi.status() != WL_CONNECTED) {
+    Serial.println("WiFi desconectado, intentando reconectar...");
+    WiFi.reconnect();
+    unsigned long reconnectStart = millis();
+    const unsigned long reconnectTimeout = 5000UL;
+    while (WiFi.status() != WL_CONNECTED && millis() - reconnectStart < reconnectTimeout) {
+      delay(250);
+    }
+  }
+
+  // --- Envío de datos al servidor ---
+  if (WiFi.status() == WL_CONNECTED) {
+    HTTPClient http;
+    String url = serverName
+                 + "?distancia1=" + String(distancia1, 1)
+                 + "&llenado1="   + String(porcentaje1, 1)
+                 + "&litros1="    + String(litros1, 1)
+                 + "&distancia2=" + String(distancia2, 1)
+                 + "&llenado2="   + String(porcentaje2, 1)
+                 + "&litros2="    + String(litros2, 1)
+                 + "&distancia3=" + String(distancia3, 1)
+                 + "&llenado3="   + String(porcentaje3, 1)
+                 + "&litros3="    + String(litros3, 1);
+
+    http.begin(url);
+    int httpResponseCode = http.GET();
+
+    if (httpResponseCode > 0) {
+      Serial.print("Datos enviados. Código: ");
+      Serial.println(httpResponseCode);
+    } else {
+      Serial.print("Error al enviar: ");
+      Serial.println(httpResponseCode);
+    }
+    http.end();
+  } else {
+    Serial.println("WiFi desconectado. No se envían datos.");
+  }
+
+  delay(2000); // cada 2 segundos
+}
