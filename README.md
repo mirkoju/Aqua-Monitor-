@@ -28,17 +28,13 @@ Base de datos: MySQL
 Hardware compatible: ESP32 (para enviar datos de sensores)
 
 📁 Estructura del proyecto
-Aqua-Monitor/
-
-<p>├── index2.html              # Página de inicio<p>
-<p>├── panel.php                # Panel principal de monitoreo<p>
-├── alertas.php              # Módulo de alertas
-├── lectura.php              # Lectura de datos recibidos
-├── recibir.php              # Recepción de datos desde ESP32
-├── registrar.php            # Registro de nuevos usuarios
-├── monitoreo.sql            # Script de base de datos
-├── aquamonitor.png          # Logo del sistema
-└── ...                      # Otros archivos complementarios
+<p>index2.html              Página de inicio<p>
+<p>pgraficos.php            Panel principal de monitoreo<p>
+<p>alertas.php              Módulo de alertas<p>
+<p>recibir.php              Recepción de datos desde ESP32<p>
+<p>registrar.php            Registro de nuevos usuarios<p>
+<p>aquamonitor.png          Logo del sistema<p>
+<p> ...                     Otros archivos complementarios<p>
 
 🔒 Seguridad y mantenimiento
 
