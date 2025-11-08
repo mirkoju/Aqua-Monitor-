@@ -29,8 +29,9 @@ Hardware compatible: ESP32 (para enviar datos de sensores)
 
 📁 Estructura del proyecto
 Aqua-Monitor/
-├── index2.html              # Página de inicio
-├── panel.php                # Panel principal de monitoreo
+
+<p>├── index2.html              # Página de inicio<p>
+<p>├── panel.php                # Panel principal de monitoreo<p>
 ├── alertas.php              # Módulo de alertas
 ├── lectura.php              # Lectura de datos recibidos
 ├── recibir.php              # Recepción de datos desde ESP32
