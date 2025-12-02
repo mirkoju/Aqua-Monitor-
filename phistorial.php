@@ -188,8 +188,12 @@
     <div class="chart-card">
       <canvas id="chartTanque1"></canvas>
       <?php
-      // Obtener los últimos 10 registros del historial
-      $mysqli = new mysqli("localhost", "root", "", "nusuario");
+      // Obtener los últimos 10 registros del historial usando la conexión central
+      require_once 'con_db.php';
+      $mysqli = $conex;
+      if (!$mysqli) {
+          echo "<p style='text-align:center;color:#f44336;'>Error de conexión a la base de datos.</p>";
+      }
       $result = $mysqli->query("SELECT porcentaje, fecha FROM tanque_niveles ORDER BY fecha DESC LIMIT 10");
       $labels = [];
       $data = [];
@@ -258,57 +262,6 @@
         }
       });
     }
-  </script>
-
-</body>
-</html>
-        responsive: true,
-        plugins: {
-          title: {
-            display: true,
-            text: 'Historial - Tanque AGUA FILTRADA',
-            font: { size: 18 }
-          }
-        },
-        scales: {
-          y: {
-            beginAtZero: true,
-            max: 100
-          }
-        }
-      }
-    });
-
-    // Gráfico Tanque 3
-    new Chart(document.getElementById('chartTanque3').getContext('2d'), {
-      type: 'line',
-      data: {
-        labels: labels,
-        datasets: [{
-          label: 'Tanque AGUA NO FILTRADA',
-          data: [30, 32, 35, 34, 33, 32, 31],
-          borderColor: '#f44336',
-          backgroundColor: 'transparent',
-          tension: 0.3
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          title: {
-            display: true,
-            text: 'Historial - Tanque AGUA NO FILTRADA',
-            font: { size: 18 }
-          }
-        },
-        scales: {
-          y: {
-            beginAtZero: true,
-            max: 100
-          }
-        }
-      }
-    });
   </script>
 
 </body>

@@ -1,0 +1,1 @@
+{"t1":{"distancia":51.7,"llenado":29.4,"litros":5.9},"t2":{"distancia":44.6,"llenado":45.3,"litros":9.1},"t3":{"distancia":44.4,"llenado":45.7,"litros":9.1},"fecha":"2025-12-02 20:19:55"}

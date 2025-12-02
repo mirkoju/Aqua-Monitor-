@@ -94,6 +94,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      /* asegurar que las tarjetas no se solapen */
+      margin-bottom: 8px;
     }
     .alert-info {
       display: flex;
@@ -254,22 +256,38 @@
   </div>
 
   <script>
-    // Cargar alertas desde la base de datos y renderizar
+    // mantener lista de IDs actualmente mostrados para evitar re-render innecesario
+    let currentDisplayedIds = [];
+
+    // Cargar alertas desde la base de datos y renderizar (reconstrucción completa)
     function cargarAlertas() {
       fetch('alertas_data.php?_=' + Date.now(), { cache: 'no-store' })
         .then(response => response.json())
         .then(data => {
+          if (!Array.isArray(data)) return;
+
+          // Tomar las últimas 5 alertas (asumimos vienen ordenadas por fecha DESC)
+          const latest = data.slice(0, 5);
+          const latestIds = latest.map(a => String(a.id));
+
+          // Si los IDs no cambiaron, no hacemos nada (evita parpadeos)
+          if (arraysEqual(latestIds, currentDisplayedIds)) {
+            // console.log('sin cambios en alertas');
+            return;
+          }
+
+          currentDisplayedIds = latestIds;
+
           const alertList = document.getElementById('alertList');
-          // Reconstruir la lista completa en cada respuesta
+          // Reconstruir la lista completa con las 5 más recientes
           alertList.innerHTML = '';
 
-          if (!Array.isArray(data) || data.length === 0) {
+          if (latest.length === 0) {
             alertList.innerHTML = '<div style="text-align:center;color:#888">No hay alertas recientes.</div>';
             return;
           }
 
-          // data viene ordenada por fecha DESC (más recientes primero)
-          data.forEach(alerta => {
+          latest.forEach(alerta => {
             const leida = (alerta.estado || '').toLowerCase() === 'leida';
 
             // Determinar etiqueta de sensor a partir del campo 'tanque'
@@ -303,6 +321,17 @@
         });
     }
 
+    // Utilidad simple para comparar arrays de strings
+    function arraysEqual(a, b) {
+      if (a === b) return true;
+      if (!a || !b) return false;
+      if (a.length !== b.length) return false;
+      for (let i = 0; i < a.length; i++) {
+        if (a[i] !== b[i]) return false;
+      }
+      return true;
+    }
+
     // Delegación de eventos para botones Eliminar (funciona para elementos dinámicos)
     document.getElementById('alertList').addEventListener('click', function (e) {
       const btn = e.target.closest('.eliminar-btn');
@@ -311,71 +340,67 @@
       eliminarAlerta(id, btn);
     });
 
-    // Eliminar alerta por ID (se espera que exista eliminar_alerta.php en el servidor)
+    // Eliminar alerta por ID
     function eliminarAlerta(id, btn) {
-      if (!id) return;
+      if (!id) {
+        alert('ID de alerta inválido');
+        return;
+      }
+
+      // intentar normalizar el id a entero
+      let parsedId = parseInt(id, 10);
+      if (isNaN(parsedId)) {
+        // intentar leer desde el contenedor si vino mal el atributo
+        const cardFallback = btn.closest('.alert-card');
+        if (cardFallback && cardFallback.dataset && cardFallback.dataset.id) {
+          parsedId = parseInt(cardFallback.dataset.id, 10);
+        }
+      }
+
+      if (isNaN(parsedId)) {
+        console.error('ID de alerta inválido:', id);
+        alert('ID de alerta inválido');
+        btn.disabled = false;
+        return;
+      }
+
       btn.disabled = true;
+      // enviar como entero
+      const body = 'id=' + encodeURIComponent(parsedId);
+
       fetch('eliminar_alerta.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: 'id=' + encodeURIComponent(id)
+        body: body
       })
         .then(response => response.json())
         .then(data => {
           if (data && data.success) {
-            // recargar lista inmediatamente para mostrar otras alertas pendientes
-            cargarAlertas();
+            // Quitar solo la tarjeta correspondiente del DOM
+            const card = btn.closest('.alert-card') || document.getElementById('alert-' + parsedId);
+            if (card && card.parentNode) {
+              card.parentNode.removeChild(card);
+            }
+            // quitar id de la lista mostrada para evitar que vuelva en la proxima comprobacion local
+            currentDisplayedIds = currentDisplayedIds.filter(i => i !== String(parsedId));
           } else {
+            console.error('Error al eliminar (backend):', data);
             alert('Error al eliminar: ' + (data && data.error ? data.error : 'Desconocido'));
             btn.disabled = false;
           }
         })
-        .catch(() => {
+        .catch(err => {
+          console.error('Error de red al eliminar:', err);
           alert('Error de red al eliminar');
           btn.disabled = false;
         });
     }
 
-    // Filtro de alertas (no leídas/todas) — adapta display según dataset.leida
-    function filtrarAlertas(tipo) {
-      const botones = document.querySelectorAll('.tab-btn');
-      botones.forEach(btn => btn.classList.remove('active'));
-      if (tipo === 'no-leidas') {
-        if (botones[0]) botones[0].classList.add('active');
-      } else {
-        if (botones[1]) botones[1].classList.add('active');
-      }
-
-      const alertas = document.querySelectorAll('.alert-card');
-      alertas.forEach(alerta => {
-        if (tipo === 'no-leidas' && alerta.dataset.leida === 'true') {
-          alerta.style.display = 'none';
-        } else {
-          alerta.style.display = 'flex';
-        }
-      });
-    }
-
     // Inicializar y refrescar periódicamente
     window.onload = function () {
       cargarAlertas();
-      setInterval(cargarAlertas, 3000); // refrescar cada 3s (más responsivo)
+      setInterval(cargarAlertas, 2000); // refrescar cada 2s para mayor rapidez
     };
-
-    // Toggle del panel de configuración (mantener igual)
-    const configBtn = document.getElementById("config-btn");
-    const configPanel = document.getElementById("config-panel");
-
-    configBtn.onclick = function (e) {
-      e.preventDefault();
-      configPanel.classList.toggle("hidden");
-    };
-
-    document.addEventListener("click", function (e) {
-      if (!configPanel.contains(e.target) && !configBtn.contains(e.target)) {
-        configPanel.classList.add("hidden");
-      }
-    });
   </script>
 
 </body>

@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-// Conexión a la base de datos
-$conex = mysqli_connect("localhost", "root", "", "nusuario");
+// Usar conexión central con credenciales de con_db.php
+require_once 'con_db.php';
+$conex = $conex; // ya viene definida en con_db.php
 if (!$conex) {
     die("Error de conexión: " . mysqli_connect_error());
-    include("con_db.php");
 }
 
 $usuario = $_POST['usuario'] ?? '';
@@ -43,3 +43,4 @@ if (mysqli_num_rows($result) === 1) {
 $_SESSION['error_login'] = "Usuario o contraseña incorrectos.";
 header("Location: index.php");
 exit();
+?>

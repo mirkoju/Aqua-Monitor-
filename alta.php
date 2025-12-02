@@ -1,5 +1,9 @@
 <?php
-$conex = mysqli_connect("localhost", "root", "", "nusuario");
+require_once 'con_db.php';
+$conex = $conex;
+if (!$conex) {
+    die("Error de conexión: " . mysqli_connect_error());
+}
 
 $mensaje = '';
 $tipo_mensaje = '';

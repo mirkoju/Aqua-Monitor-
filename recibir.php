@@ -1,29 +1,24 @@
 <?php
 header('Content-Type: text/plain; charset=utf-8');
-header('Refresh: 5');
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db = "nusuario";
-$conn = new mysqli($host, $user, $pass, $db);
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+
+include 'con_db.php';
+$conn = $conex;
+
+if (!$conn || !mysqli_ping($conn)) {
+    die("Error: No hay conexión a BD");
 }
 
-// Parámetros del tacho (igual que en el microcontrolador)
 $alturaSensorLlena = 20.0;
 $alturaSensorVacia = 65.0;
 $alturaTacho = 45.0;
 $volumenTachoLitros = 20.0;
-$umbral_alerta = 25.0; // porcentaje
+$umbral_alerta = 25.0;
 
-// Función auxiliar para eliminar filas antiguas (historial y alertas)
 function mantener_limite($conn, $tabla, $limite, $col_fecha = 'fecha') {
     $sql_delete = "DELETE FROM $tabla WHERE id NOT IN (SELECT id FROM (SELECT id FROM $tabla ORDER BY $col_fecha DESC LIMIT $limite) AS temp)";
     $conn->query($sql_delete);
 }
 
-// Cargar ultimo.txt existente (si hay) para actualizar solo los campos entrantes
 $ultimo_path = "ultimo.txt";
 $ultimo = array('t1'=>null,'t2'=>null,'t3'=>null,'fecha'=>date('Y-m-d H:i:s'));
 if (file_exists($ultimo_path)) {
@@ -33,31 +28,34 @@ if (file_exists($ultimo_path)) {
     }
 }
 
-// Helper para actualizar ultimo y guardarlo
 function guardar_ultimo($path, &$ultimo_arr) {
     $ultimo_arr['fecha'] = date('Y-m-d H:i:s');
     file_put_contents($path, json_encode($ultimo_arr));
 }
 
-// Procesamiento de entradas:
-// - caso antiguo: recibir distancia1/2, llenado1/2, litros1/2 (envío de dos tanques)
-// - caso nuevo: puede llegar sensor=3 con distancia/llenado/litros (sin sufijo) o directamente distancia3/llenado3/litros3
-
-// Helper para insertar historial y alerta
-function registrar_historial_y_alerta($conn, $tanque_id, $nombre, $porcentaje, $umbral_alerta) {
-    $porc_round = round(floatval($porcentaje),1);
-    $sql = "INSERT INTO historial_agua (tanque_id, tanque, porcentaje, estado) VALUES ($tanque_id, '" . $conn->real_escape_string($nombre) . "', $porc_round, 'normal')";
+// FUNCIÓN CORREGIDA: Guarda distancia, porcentaje Y litros
+function registrar_historial_y_alerta($conn, $tanque_id, $nombre, $distancia, $porcentaje, $litros, $umbral_alerta) {
+    $porc_round = round(floatval($porcentaje), 1);
+    $dist_round = round(floatval($distancia), 1);
+    $lit_round = round(floatval($litros), 2);
+    $nombre_esc = $conn->real_escape_string($nombre);
+    
+    // Insertar en historial_agua CON distancia y litros
+    $sql = "INSERT INTO historial_agua (tanque_id, tanque, distancia, porcentaje, litros, estado) 
+            VALUES ($tanque_id, '$nombre_esc', $dist_round, $porc_round, $lit_round, 'normal')";
     $conn->query($sql);
+    
+    // Insertar alerta si está por debajo del umbral
     if ($porc_round < $umbral_alerta) {
-        $sql_alerta = "INSERT INTO alertas_llenado (tanque, porcentaje, estado) VALUES ('" . $conn->real_escape_string($nombre) . "', $porc_round, 'no leida')";
+        $sql_alerta = "INSERT INTO alertas_llenado (tanque_id, tanque, porcentaje, estado) 
+                       VALUES ($tanque_id, '$nombre_esc', $porc_round, 'no leida')";
         $conn->query($sql_alerta);
     }
 }
 
-// Detectar envíos multi-tanque (distancia1 / distancia2 / distancia3) o envíos individuales por sensor
 $handled = false;
 
-// Si vienen parámetros para los tanques (compatibilidad con envío simultáneo)
+// PROCESAMIENTO PRINCIPAL
 if (isset($_GET['distancia1']) || isset($_GET['distancia']) || isset($_GET['distancia2']) || isset($_GET['distancia3'])) {
     $distancia1 = isset($_GET['distancia1']) ? floatval($_GET['distancia1']) : (isset($_GET['distancia']) ? floatval($_GET['distancia']) : null);
     $llenado1   = isset($_GET['llenado1'])   ? floatval($_GET['llenado1'])   : null;
@@ -71,7 +69,7 @@ if (isset($_GET['distancia1']) || isset($_GET['distancia']) || isset($_GET['dist
     $llenado3   = isset($_GET['llenado3'])   ? floatval($_GET['llenado3'])   : null;
     $litros3    = isset($_GET['litros3'])    ? floatval($_GET['litros3'])    : null;
 
-    // Actualizar ultimo (solo los campos presentes)
+    // Actualizar archivo último
     if ($distancia1 !== null || $llenado1 !== null || $litros1 !== null) {
         $ultimo['t1'] = array('distancia'=>$distancia1, 'llenado'=>$llenado1, 'litros'=>$litros1);
     }
@@ -84,7 +82,7 @@ if (isset($_GET['distancia1']) || isset($_GET['distancia']) || isset($_GET['dist
     
     guardar_ultimo($ultimo_path, $ultimo);
 
-    // Mostrar resultado al cliente
+    // Mostrar en pantalla
     $out = "";
     $out .= "T1 Dist: " . ($distancia1 !== null ? round($distancia1,1) . " cm" : "N/A") . " | Llenado: " . ($llenado1 !== null ? round($llenado1,1) . "%" : "N/A") . " | Litros: " . ($litros1 !== null ? round($litros1,1) . " L" : "N/A") . "\n";
     $out .= "T2 Dist: " . ($distancia2 !== null ? round($distancia2,1) . " cm" : "N/A") . " | Llenado: " . ($llenado2 !== null ? round($llenado2,1) . "%" : "N/A") . " | Litros: " . ($litros2 !== null ? round($litros2,1) . " L" : "N/A") . "\n";
@@ -92,34 +90,30 @@ if (isset($_GET['distancia1']) || isset($_GET['distancia']) || isset($_GET['dist
 
     echo $out;
 
-    // Guardar en la base de datos historial para los tres tanques si vienen valores
+    // Guardar distancia, porcentaje Y litros
     if ($llenado1 !== null) {
-        registrar_historial_y_alerta($conn, 1, 'Tacho 20L - 1', $llenado1, $umbral_alerta);
+        registrar_historial_y_alerta($conn, 1, 'Tacho 20L - 1', $distancia1, $llenado1, $litros1, $umbral_alerta);
     }
     if ($llenado2 !== null) {
-        registrar_historial_y_alerta($conn, 2, 'Tacho 20L - 2', $llenado2, $umbral_alerta);
+        registrar_historial_y_alerta($conn, 2, 'Tacho 20L - 2', $distancia2, $llenado2, $litros2, $umbral_alerta);
     }
     if ($llenado3 !== null) {
-        registrar_historial_y_alerta($conn, 3, 'Tacho 20L - 3', $llenado3, $umbral_alerta);
+        registrar_historial_y_alerta($conn, 3, 'Tacho 20L - 3', $distancia3, $llenado3, $litros3, $umbral_alerta);
     }
 
-    // Mantener solo las filas más recientes
-    mantener_limite($conn, 'historial_agua', 25);
+    mantener_limite($conn, 'historial_agua', 100);
     mantener_limite($conn, 'alertas_llenado', 50);
 
     $handled = true;
 }
 
-// Procesar envíos individuales con sensor=#
 if (!$handled && isset($_GET['sensor'])) {
     $sensorId = intval($_GET['sensor']);
-    // Si el sensor envía parámetros sin sufijo (distancia, llenado, litros)
     $dist = isset($_GET['distancia']) ? floatval($_GET['distancia']) : (isset($_GET['distancia' . $sensorId]) ? floatval($_GET['distancia' . $sensorId]) : null);
     $llen = isset($_GET['llenado'])   ? floatval($_GET['llenado'])   : (isset($_GET['llenado' . $sensorId]) ? floatval($_GET['llenado' . $sensorId]) : null);
     $lit  = isset($_GET['litros'])    ? floatval($_GET['litros'])    : (isset($_GET['litros' . $sensorId]) ? floatval($_GET['litros' . $sensorId]) : null);
 
     if ($sensorId === 3) {
-        // actualizar ultimo y DB para t3
         $ultimo['t3'] = array('distancia'=>$dist, 'llenado'=>$llen, 'litros'=>$lit);
         guardar_ultimo($ultimo_path, $ultimo);
 
@@ -127,18 +121,16 @@ if (!$handled && isset($_GET['sensor'])) {
         echo "T2 Dist: " . (isset($ultimo['t2']['distancia']) ? round($ultimo['t2']['distancia'],1) . " cm" : "N/A") . " | Llenado: " . (isset($ultimo['t2']['llenado']) ? round($ultimo['t2']['llenado'],1) . "%" : "N/A") . " | Litros: " . (isset($ultimo['t2']['litros']) ? round($ultimo['t2']['litros'],1) . " L" : "N/A") . "\n";
         echo "T3 Dist: " . ($dist !== null ? round($dist,1) . " cm" : "N/A") . " | Llenado: " . ($llen !== null ? round($llen,1) . "%" : "N/A") . " | Litros: " . ($lit !== null ? round($lit,1) . " L" : "N/A") . "\n";
 
-        // Insertar historial y alerta para T3 si viene porcentaje
         if ($llen !== null) {
-            registrar_historial_y_alerta($conn, 3, 'Tacho 20L - 3', $llen, $umbral_alerta);
+            registrar_historial_y_alerta($conn, 3, 'Tacho 20L - 3', $dist, $llen, $lit, $umbral_alerta);
         }
 
-        mantener_limite($conn, 'historial_agua', 25);
+        mantener_limite($conn, 'historial_agua', 100);
         mantener_limite($conn, 'alertas_llenado', 50);
         $handled = true;
     }
 }
 
-// Soporte directo para parámetros con sufijo ...3 (por si se envían así sin sensor=3)
 if (!$handled && (isset($_GET['distancia3']) || isset($_GET['llenado3']) || isset($_GET['litros3']))) {
     $dist3 = isset($_GET['distancia3']) ? floatval($_GET['distancia3']) : null;
     $llen3 = isset($_GET['llenado3']) ? floatval($_GET['llenado3']) : null;
@@ -152,15 +144,14 @@ if (!$handled && (isset($_GET['distancia3']) || isset($_GET['llenado3']) || isse
     echo "T3 Dist: " . ($dist3 !== null ? round($dist3,1) . " cm" : "N/A") . " | Llenado: " . ($llen3 !== null ? round($llen3,1) . "%" : "N/A") . " | Litros: " . ($lit3 !== null ? round($lit3,1) . " L" : "N/A") . "\n";
 
     if ($llen3 !== null) {
-        registrar_historial_y_alerta($conn, 3, 'Tacho 20L - 3', $llen3, $umbral_alerta);
+        registrar_historial_y_alerta($conn, 3, 'Tacho 20L - 3', $dist3, $llen3, $lit3, $umbral_alerta);
     }
 
-    mantener_limite($conn, 'historial_agua', 25);
+    mantener_limite($conn, 'historial_agua', 100);
     mantener_limite($conn, 'alertas_llenado', 50);
     $handled = true;
 }
 
-// Si no fue manejado por las rutas anteriores, devolver ultimo.txt o mensaje
 if (!$handled) {
     if (file_exists($ultimo_path)) {
         $json = file_get_contents($ultimo_path);

@@ -16,7 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif ($nueva_pass !== $conf_pass) {
         $error = "Las contraseñas no coinciden.";
     } else {
-        $conex = mysqli_connect("localhost", "root", "", "nusuario");
+        require_once 'con_db.php';
+        $conex = $conex;
         if (!$conex) {
             die("Error de conexión: " . mysqli_connect_error());
         }

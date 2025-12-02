@@ -594,3 +594,2121 @@
 2025-10-28 01:02:51 Error SQL historial T1: Duplicate entry '0' for key 'PRIMARY' -- SQL: INSERT INTO historial_agua (tanque_id, tanque, porcentaje, estado) VALUES (1, 'Tacho 20L - 1', 6, 'normal')
 2025-10-28 01:02:51 Error SQL alerta T1: Duplicate entry '0' for key 'PRIMARY' -- SQL: INSERT INTO alertas_llenado (tanque_id, tanque, porcentaje, estado) VALUES (1, 'Tacho 20L - 1', 6, 'no leida')
 2025-10-28 01:02:51 Error SQL historial T2: Duplicate entry '0' for key 'PRIMARY' -- SQL: INSERT INTO historial_agua (tanque_id, tanque, porcentaje, estado) VALUES (2, 'Tacho 20L - 2', 90, 'normal')
+2025-11-28 19:21:43 - REQUEST: Array
+(
+)
+
+2025-11-28 19:21:43 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:21:43
+
+2025-11-28 19:21:43 - REQUEST: Array
+(
+    [distancia1] => 28.0
+    [llenado1] => 82.3
+    [litros1] => 16.5
+    [distancia2] => 24.8
+    [llenado2] => 89.3
+    [litros2] => 17.9
+    [distancia3] => 237.1
+    [llenado3] => 0.0
+    [litros3] => 0.0
+)
+
+2025-11-28 19:21:45 - REQUEST: Array
+(
+)
+
+2025-11-28 19:21:45 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:21:45
+
+2025-11-28 19:21:46 - REQUEST: Array
+(
+    [distancia1] => 28.4
+    [llenado1] => 81.4
+    [litros1] => 16.3
+    [distancia2] => 24.8
+    [llenado2] => 89.3
+    [litros2] => 17.9
+    [distancia3] => 20.1
+    [llenado3] => 99.9
+    [litros3] => 20.0
+)
+
+2025-11-28 19:21:48 - REQUEST: Array
+(
+    [distancia1] => 28.8
+    [llenado1] => 80.4
+    [litros1] => 16.1
+    [distancia2] => 24.9
+    [llenado2] => 89.2
+    [litros2] => 17.8
+    [distancia3] => 22.6
+    [llenado3] => 94.3
+    [litros3] => 18.9
+)
+
+2025-11-28 19:21:50 - REQUEST: Array
+(
+    [distancia1] => 27.6
+    [llenado1] => 83.2
+    [litros1] => 16.6
+    [distancia2] => 24.8
+    [llenado2] => 89.3
+    [litros2] => 17.9
+    [distancia3] => 35.9
+    [llenado3] => 64.7
+    [litros3] => 12.9
+)
+
+2025-11-28 19:21:52 - REQUEST: Array
+(
+    [distancia1] => 27.5
+    [llenado1] => 83.2
+    [litros1] => 16.6
+    [distancia2] => 24.8
+    [llenado2] => 89.3
+    [litros2] => 17.9
+    [distancia3] => 38.6
+    [llenado3] => 58.7
+    [litros3] => 11.7
+)
+
+2025-11-28 19:21:55 - REQUEST: Array
+(
+    [distancia1] => 28.9
+    [llenado1] => 80.3
+    [litros1] => 16.1
+    [distancia2] => 24.5
+    [llenado2] => 90.1
+    [litros2] => 18.0
+    [distancia3] => 20.3
+    [llenado3] => 99.3
+    [litros3] => 19.9
+)
+
+2025-11-28 19:21:56 - REQUEST: Array
+(
+)
+
+2025-11-28 19:21:56 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:21:56
+
+2025-11-28 19:21:57 - REQUEST: Array
+(
+    [distancia1] => 28.9
+    [llenado1] => 80.3
+    [litros1] => 16.1
+    [distancia2] => 20.8
+    [llenado2] => 98.3
+    [litros2] => 19.7
+    [distancia3] => 20.6
+    [llenado3] => 98.7
+    [litros3] => 19.7
+)
+
+2025-11-28 19:21:59 - REQUEST: Array
+(
+    [distancia1] => 28.9
+    [llenado1] => 80.3
+    [litros1] => 16.1
+    [distancia2] => 24.8
+    [llenado2] => 89.3
+    [litros2] => 17.9
+    [distancia3] => 20.0
+    [llenado3] => 100.0
+    [litros3] => 20.0
+)
+
+2025-11-28 19:22:01 - REQUEST: Array
+(
+    [distancia1] => 28.4
+    [llenado1] => 81.4
+    [litros1] => 16.3
+    [distancia2] => 24.8
+    [llenado2] => 89.3
+    [litros2] => 17.9
+    [distancia3] => 20.2
+    [llenado3] => 99.5
+    [litros3] => 19.9
+)
+
+2025-11-28 19:22:03 - REQUEST: Array
+(
+    [distancia1] => 28.4
+    [llenado1] => 81.4
+    [litros1] => 16.3
+    [distancia2] => 24.5
+    [llenado2] => 90.1
+    [litros2] => 18.0
+    [distancia3] => 20.2
+    [llenado3] => 99.5
+    [litros3] => 19.9
+)
+
+2025-11-28 19:22:06 - REQUEST: Array
+(
+    [distancia1] => 28.4
+    [llenado1] => 81.4
+    [litros1] => 16.3
+    [distancia2] => 24.9
+    [llenado2] => 89.2
+    [litros2] => 17.8
+    [distancia3] => 33.6
+    [llenado3] => 69.7
+    [litros3] => 13.9
+)
+
+2025-11-28 19:22:08 - REQUEST: Array
+(
+    [distancia1] => 29.2
+    [llenado1] => 79.5
+    [litros1] => 15.9
+    [distancia2] => 24.8
+    [llenado2] => 89.3
+    [litros2] => 17.9
+    [distancia3] => 20.2
+    [llenado3] => 99.6
+    [litros3] => 19.9
+)
+
+2025-11-28 19:22:10 - REQUEST: Array
+(
+    [distancia1] => 29.2
+    [llenado1] => 79.5
+    [litros1] => 15.9
+    [distancia2] => 24.4
+    [llenado2] => 90.2
+    [litros2] => 18.0
+    [distancia3] => 20.0
+    [llenado3] => 99.9
+    [litros3] => 20.0
+)
+
+2025-11-28 19:22:12 - REQUEST: Array
+(
+    [distancia1] => 29.7
+    [llenado1] => 78.4
+    [litros1] => 15.7
+    [distancia2] => 20.3
+    [llenado2] => 99.3
+    [litros2] => 19.9
+    [distancia3] => 20.2
+    [llenado3] => 99.5
+    [litros3] => 19.9
+)
+
+2025-11-28 19:22:15 - REQUEST: Array
+(
+    [distancia1] => 28.8
+    [llenado1] => 80.4
+    [litros1] => 16.1
+    [distancia2] => 20.3
+    [llenado2] => 99.2
+    [litros2] => 19.8
+    [distancia3] => 20.5
+    [llenado3] => 98.8
+    [litros3] => 19.8
+)
+
+2025-11-28 19:22:17 - REQUEST: Array
+(
+    [distancia1] => 28.4
+    [llenado1] => 81.4
+    [litros1] => 16.3
+    [distancia2] => 20.4
+    [llenado2] => 99.2
+    [litros2] => 19.8
+    [distancia3] => 21.5
+    [llenado3] => 96.7
+    [litros3] => 19.3
+)
+
+2025-11-28 19:22:19 - REQUEST: Array
+(
+    [distancia1] => 28.4
+    [llenado1] => 81.4
+    [litros1] => 16.3
+    [distancia2] => 20.3
+    [llenado2] => 99.2
+    [litros2] => 19.8
+    [distancia3] => 20.6
+    [llenado3] => 98.7
+    [litros3] => 19.7
+)
+
+2025-11-28 19:22:21 - REQUEST: Array
+(
+    [distancia1] => 30.1
+    [llenado1] => 77.7
+    [litros1] => 15.5
+    [distancia2] => 20.3
+    [llenado2] => 99.2
+    [litros2] => 19.8
+    [distancia3] => 20.2
+    [llenado3] => 99.5
+    [litros3] => 19.9
+)
+
+2025-11-28 19:22:23 - REQUEST: Array
+(
+    [distancia1] => 28.9
+    [llenado1] => 80.3
+    [litros1] => 16.1
+    [distancia2] => 20.3
+    [llenado2] => 99.2
+    [litros2] => 19.8
+    [distancia3] => 20.1
+    [llenado3] => 99.8
+    [litros3] => 20.0
+)
+
+2025-11-28 19:22:26 - REQUEST: Array
+(
+    [distancia1] => 29.2
+    [llenado1] => 79.5
+    [litros1] => 15.9
+    [distancia2] => 20.3
+    [llenado2] => 99.2
+    [litros2] => 19.8
+    [distancia3] => 20.2
+    [llenado3] => 99.5
+    [litros3] => 19.9
+)
+
+2025-11-28 19:22:28 - REQUEST: Array
+(
+    [distancia1] => 28.4
+    [llenado1] => 81.4
+    [litros1] => 16.3
+    [distancia2] => 20.3
+    [llenado2] => 99.2
+    [litros2] => 19.8
+    [distancia3] => 20.8
+    [llenado3] => 98.3
+    [litros3] => 19.7
+)
+
+2025-11-28 19:22:30 - REQUEST: Array
+(
+    [distancia1] => 28.4
+    [llenado1] => 81.4
+    [litros1] => 16.3
+    [distancia2] => 20.3
+    [llenado2] => 99.2
+    [litros2] => 19.8
+    [distancia3] => 20.0
+    [llenado3] => 100.0
+    [litros3] => 20.0
+)
+
+2025-11-28 19:22:32 - REQUEST: Array
+(
+    [distancia1] => 28.4
+    [llenado1] => 81.4
+    [litros1] => 16.3
+    [distancia2] => 20.3
+    [llenado2] => 99.2
+    [litros2] => 19.8
+    [distancia3] => 22.6
+    [llenado3] => 94.3
+    [litros3] => 18.9
+)
+
+2025-11-28 19:22:35 - REQUEST: Array
+(
+    [distancia1] => 28.3
+    [llenado1] => 81.5
+    [litros1] => 16.3
+    [distancia2] => 20.1
+    [llenado2] => 99.9
+    [litros2] => 20.0
+    [distancia3] => 70.0
+    [llenado3] => 0.0
+    [litros3] => 0.0
+)
+
+2025-11-28 19:22:37 - REQUEST: Array
+(
+    [distancia1] => 28.4
+    [llenado1] => 81.4
+    [litros1] => 16.3
+    [distancia2] => 20.1
+    [llenado2] => 99.9
+    [litros2] => 20.0
+    [distancia3] => 70.0
+    [llenado3] => 0.0
+    [litros3] => 0.0
+)
+
+2025-11-28 19:22:39 - REQUEST: Array
+(
+    [distancia1] => 28.4
+    [llenado1] => 81.4
+    [litros1] => 16.3
+    [distancia2] => 20.1
+    [llenado2] => 99.9
+    [litros2] => 20.0
+    [distancia3] => 22.5
+    [llenado3] => 94.5
+    [litros3] => 18.9
+)
+
+2025-11-28 19:22:41 - REQUEST: Array
+(
+    [distancia1] => 29.0
+    [llenado1] => 80.0
+    [litros1] => 16.0
+    [distancia2] => 20.1
+    [llenado2] => 99.7
+    [litros2] => 19.9
+    [distancia3] => 20.0
+    [llenado3] => 100.0
+    [litros3] => 20.0
+)
+
+2025-11-28 19:22:42 - REQUEST: Array
+(
+)
+
+2025-11-28 19:22:42 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:22:42
+
+2025-11-28 19:22:43 - REQUEST: Array
+(
+    [distancia1] => 28.9
+    [llenado1] => 80.2
+    [litros1] => 16.0
+    [distancia2] => 20.0
+    [llenado2] => 99.9
+    [litros2] => 20.0
+    [distancia3] => 50.7
+    [llenado3] => 31.7
+    [litros3] => 6.3
+)
+
+2025-11-28 19:22:44 - REQUEST: Array
+(
+)
+
+2025-11-28 19:22:44 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:22:44
+
+2025-11-28 19:22:46 - REQUEST: Array
+(
+    [distancia1] => 210.2
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 20.3
+    [llenado2] => 99.3
+    [litros2] => 19.9
+    [distancia3] => 70.0
+    [llenado3] => 0.0
+    [litros3] => 0.0
+)
+
+2025-11-28 19:22:46 - REQUEST: Array
+(
+)
+
+2025-11-28 19:22:46 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:22:46
+
+2025-11-28 19:22:47 - REQUEST: Array
+(
+)
+
+2025-11-28 19:22:47 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:22:47
+
+2025-11-28 19:22:48 - REQUEST: Array
+(
+)
+
+2025-11-28 19:22:48 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:22:48
+
+2025-11-28 19:22:48 - REQUEST: Array
+(
+    [distancia1] => 208.9
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 70.0
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 70.0
+    [llenado3] => 0.0
+    [litros3] => 0.0
+)
+
+2025-11-28 19:22:49 - REQUEST: Array
+(
+)
+
+2025-11-28 19:22:49 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:22:49
+
+2025-11-28 19:22:50 - REQUEST: Array
+(
+    [distancia1] => 204.9
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 70.0
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 20.3
+    [llenado3] => 99.4
+    [litros3] => 19.9
+)
+
+2025-11-28 19:22:51 - REQUEST: Array
+(
+)
+
+2025-11-28 19:22:51 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:22:51
+
+2025-11-28 19:22:52 - REQUEST: Array
+(
+    [distancia1] => 26.0
+    [llenado1] => 86.7
+    [litros1] => 17.3
+    [distancia2] => 70.0
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 20.2
+    [llenado3] => 99.5
+    [litros3] => 19.9
+)
+
+2025-11-28 19:22:53 - REQUEST: Array
+(
+)
+
+2025-11-28 19:22:53 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:22:53
+
+2025-11-28 19:22:55 - REQUEST: Array
+(
+    [distancia1] => 40.2
+    [llenado1] => 55.2
+    [litros1] => 11.0
+    [distancia2] => 70.0
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 20.1
+    [llenado3] => 99.8
+    [litros3] => 20.0
+)
+
+2025-11-28 19:22:55 - REQUEST: Array
+(
+)
+
+2025-11-28 19:22:55 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:22:55
+
+2025-11-28 19:22:57 - REQUEST: Array
+(
+    [distancia1] => 38.4
+    [llenado1] => 59.0
+    [litros1] => 11.8
+    [distancia2] => 31.7
+    [llenado2] => 74.0
+    [litros2] => 14.8
+    [distancia3] => 20.0
+    [llenado3] => 99.9
+    [litros3] => 20.0
+)
+
+2025-11-28 19:22:57 - REQUEST: Array
+(
+)
+
+2025-11-28 19:22:57 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:22:57
+
+2025-11-28 19:22:59 - REQUEST: Array
+(
+    [distancia1] => 20.4
+    [llenado1] => 99.0
+    [litros1] => 19.8
+    [distancia2] => 22.9
+    [llenado2] => 93.5
+    [litros2] => 18.7
+    [distancia3] => 20.1
+    [llenado3] => 99.9
+    [litros3] => 20.0
+)
+
+2025-11-28 19:22:59 - REQUEST: Array
+(
+)
+
+2025-11-28 19:22:59 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:22:59
+
+2025-11-28 19:23:01 - REQUEST: Array
+(
+    [distancia1] => 47.6
+    [llenado1] => 38.7
+    [litros1] => 7.7
+    [distancia2] => 70.9
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 20.1
+    [llenado3] => 99.7
+    [litros3] => 19.9
+)
+
+2025-11-28 19:23:01 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:01 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:01
+
+2025-11-28 19:23:03 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:03 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:03
+
+2025-11-28 19:23:04 - REQUEST: Array
+(
+    [distancia1] => 205.3
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 28.1
+    [llenado2] => 82.0
+    [litros2] => 16.4
+    [distancia3] => 20.4
+    [llenado3] => 99.1
+    [litros3] => 19.8
+)
+
+2025-11-28 19:23:05 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:05 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:05
+
+2025-11-28 19:23:06 - REQUEST: Array
+(
+    [distancia1] => 206.8
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 25.1
+    [llenado2] => 88.8
+    [litros2] => 17.8
+    [distancia3] => 70.0
+    [llenado3] => 0.0
+    [litros3] => 0.0
+)
+
+2025-11-28 19:23:07 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:07 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:07
+
+2025-11-28 19:23:09 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:09 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:09
+
+2025-11-28 19:23:09 - REQUEST: Array
+(
+    [distancia1] => 208.7
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 21.2
+    [llenado2] => 97.3
+    [litros2] => 19.5
+    [distancia3] => 70.0
+    [llenado3] => 0.0
+    [litros3] => 0.0
+)
+
+2025-11-28 19:23:11 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:11 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:11
+
+2025-11-28 19:23:11 - REQUEST: Array
+(
+    [distancia1] => 144.4
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 24.2
+    [llenado2] => 90.6
+    [litros2] => 18.1
+    [distancia3] => 70.0
+    [llenado3] => 0.0
+    [litros3] => 0.0
+)
+
+2025-11-28 19:23:13 - REQUEST: Array
+(
+    [distancia1] => 211.6
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 25.5
+    [llenado2] => 87.7
+    [litros2] => 17.5
+    [distancia3] => 70.0
+    [llenado3] => 0.0
+    [litros3] => 0.0
+)
+
+2025-11-28 19:23:13 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:13 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:13
+
+2025-11-28 19:23:15 - REQUEST: Array
+(
+    [distancia1] => 210.1
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 67.6
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 70.0
+    [llenado3] => 0.0
+    [litros3] => 0.0
+)
+
+2025-11-28 19:23:15 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:15 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:15
+
+2025-11-28 19:23:17 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:17 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:17
+
+2025-11-28 19:23:17 - REQUEST: Array
+(
+    [distancia1] => 208.9
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 32.1
+    [llenado2] => 73.0
+    [litros2] => 14.6
+    [distancia3] => 70.0
+    [llenado3] => 0.0
+    [litros3] => 0.0
+)
+
+2025-11-28 19:23:19 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:19 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:19
+
+2025-11-28 19:23:20 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 70.0
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 20.2
+    [llenado3] => 99.6
+    [litros3] => 19.9
+)
+
+2025-11-28 19:23:21 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:21 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:21
+
+2025-11-28 19:23:22 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 26.0
+    [llenado2] => 86.6
+    [litros2] => 17.3
+    [distancia3] => 68.3
+    [llenado3] => 0.0
+    [litros3] => 0.0
+)
+
+2025-11-28 19:23:23 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:24 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:24
+
+2025-11-28 19:23:24 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 70.0
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 20.0
+    [llenado3] => 99.9
+    [litros3] => 20.0
+)
+
+2025-11-28 19:23:25 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:25 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:25
+
+2025-11-28 19:23:26 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 20.1
+    [llenado2] => 99.7
+    [litros2] => 19.9
+    [distancia3] => 20.2
+    [llenado3] => 99.6
+    [litros3] => 19.9
+)
+
+2025-11-28 19:23:27 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:27 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:27
+
+2025-11-28 19:23:29 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 20.2
+    [llenado2] => 99.6
+    [litros2] => 19.9
+    [distancia3] => 59.4
+    [llenado3] => 12.4
+    [litros3] => 2.5
+)
+
+2025-11-28 19:23:29 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:29 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:29
+
+2025-11-28 19:23:31 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 21.5
+    [llenado2] => 96.7
+    [litros2] => 19.3
+    [distancia3] => 58.7
+    [llenado3] => 14.1
+    [litros3] => 2.8
+)
+
+2025-11-28 19:23:31 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:31 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:31
+
+2025-11-28 19:23:33 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 21.5
+    [llenado2] => 96.7
+    [litros2] => 19.3
+    [distancia3] => 66.2
+    [llenado3] => 0.0
+    [litros3] => 0.0
+)
+
+2025-11-28 19:23:33 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:33 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:33
+
+2025-11-28 19:23:35 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 21.5
+    [llenado2] => 96.7
+    [litros2] => 19.3
+    [distancia3] => 22.5
+    [llenado3] => 94.4
+    [litros3] => 18.9
+)
+
+2025-11-28 19:23:35 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:35 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:35
+
+2025-11-28 19:23:37 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:37 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:37
+
+2025-11-28 19:23:38 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 21.9
+    [llenado2] => 95.8
+    [litros2] => 19.2
+    [distancia3] => 23.1
+    [llenado3] => 93.0
+    [litros3] => 18.6
+)
+
+2025-11-28 19:23:39 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:39 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:39
+
+2025-11-28 19:23:40 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 70.0
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 61.9
+    [llenado3] => 6.8
+    [litros3] => 1.4
+)
+
+2025-11-28 19:23:41 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:41 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:41
+
+2025-11-28 19:23:42 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 21.9
+    [llenado2] => 95.7
+    [litros2] => 19.1
+    [distancia3] => 62.7
+    [llenado3] => 5.1
+    [litros3] => 1.0
+)
+
+2025-11-28 19:23:43 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:43 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:43
+
+2025-11-28 19:23:44 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 22.0
+    [llenado2] => 95.6
+    [litros2] => 19.1
+    [distancia3] => 63.4
+    [llenado3] => 3.6
+    [litros3] => 0.7
+)
+
+2025-11-28 19:23:45 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:45 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:45
+
+2025-11-28 19:23:47 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 21.9
+    [llenado2] => 95.7
+    [litros2] => 19.1
+    [distancia3] => 60.7
+    [llenado3] => 9.7
+    [litros3] => 1.9
+)
+
+2025-11-28 19:23:47 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:47 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:47
+
+2025-11-28 19:23:49 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 70.0
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 64.9
+    [llenado3] => 0.1
+    [litros3] => 0.0
+)
+
+2025-11-28 19:23:49 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:49 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:49
+
+2025-11-28 19:23:51 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 70.0
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 38.3
+    [llenado3] => 59.4
+    [litros3] => 11.9
+)
+
+2025-11-28 19:23:51 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:52 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:52
+
+2025-11-28 19:23:53 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:53 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:53
+
+2025-11-28 19:23:54 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 21.9
+    [llenado2] => 95.8
+    [litros2] => 19.2
+    [distancia3] => 61.0
+    [llenado3] => 8.8
+    [litros3] => 1.8
+)
+
+2025-11-28 19:23:55 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:55 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:55
+
+2025-11-28 19:23:56 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 21.9
+    [llenado2] => 95.8
+    [litros2] => 19.2
+    [distancia3] => 64.6
+    [llenado3] => 0.8
+    [litros3] => 0.2
+)
+
+2025-11-28 19:23:58 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:58 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:58
+
+2025-11-28 19:23:59 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 70.0
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 61.6
+    [llenado3] => 7.5
+    [litros3] => 1.5
+)
+
+2025-11-28 19:23:59 - REQUEST: Array
+(
+)
+
+2025-11-28 19:23:59 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:23:59
+
+2025-11-28 19:24:01 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 70.0
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 59.5
+    [llenado3] => 12.1
+    [litros3] => 2.4
+)
+
+2025-11-28 19:24:01 - REQUEST: Array
+(
+)
+
+2025-11-28 19:24:01 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:24:01
+
+2025-11-28 19:24:03 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 22.0
+    [llenado2] => 95.6
+    [litros2] => 19.1
+    [distancia3] => 60.7
+    [llenado3] => 9.7
+    [litros3] => 1.9
+)
+
+2025-11-28 19:24:03 - REQUEST: Array
+(
+)
+
+2025-11-28 19:24:03 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:24:03
+
+2025-11-28 19:24:05 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 21.5
+    [llenado2] => 96.7
+    [litros2] => 19.3
+    [distancia3] => 21.0
+    [llenado3] => 97.9
+    [litros3] => 19.6
+)
+
+2025-11-28 19:24:05 - REQUEST: Array
+(
+)
+
+2025-11-28 19:24:06 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:24:06
+
+2025-11-28 19:24:08 - REQUEST: Array
+(
+)
+
+2025-11-28 19:24:08 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:24:08
+
+2025-11-28 19:24:08 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 68.0
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 68.8
+    [llenado3] => 0.0
+    [litros3] => 0.0
+)
+
+2025-11-28 19:24:09 - REQUEST: Array
+(
+)
+
+2025-11-28 19:24:09 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:24:09
+
+2025-11-28 19:24:10 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 63.3
+    [llenado2] => 3.7
+    [litros2] => 0.7
+    [distancia3] => 22.1
+    [llenado3] => 95.3
+    [litros3] => 19.1
+)
+
+2025-11-28 19:24:11 - REQUEST: Array
+(
+)
+
+2025-11-28 19:24:11 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:24:11
+
+2025-11-28 19:24:12 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 28.5
+    [llenado2] => 81.2
+    [litros2] => 16.2
+    [distancia3] => 22.5
+    [llenado3] => 94.4
+    [litros3] => 18.9
+)
+
+2025-11-28 19:24:13 - REQUEST: Array
+(
+)
+
+2025-11-28 19:24:13 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:24:13
+
+2025-11-28 19:24:15 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 63.6
+    [llenado2] => 3.2
+    [litros2] => 0.6
+    [distancia3] => 22.1
+    [llenado3] => 95.4
+    [litros3] => 19.1
+)
+
+2025-11-28 19:24:15 - REQUEST: Array
+(
+)
+
+2025-11-28 19:24:15 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:24:15
+
+2025-11-28 19:24:17 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 64.2
+    [llenado2] => 1.7
+    [litros2] => 0.3
+    [distancia3] => 23.1
+    [llenado3] => 93.0
+    [litros3] => 18.6
+)
+
+2025-11-28 19:24:17 - REQUEST: Array
+(
+)
+
+2025-11-28 19:24:17 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:24:17
+
+2025-11-28 19:24:19 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 63.6
+    [llenado2] => 3.2
+    [litros2] => 0.6
+    [distancia3] => 22.1
+    [llenado3] => 95.3
+    [litros3] => 19.1
+)
+
+2025-11-28 19:24:19 - REQUEST: Array
+(
+)
+
+2025-11-28 19:24:19 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:24:19
+
+2025-11-28 19:24:21 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 64.2
+    [llenado2] => 1.7
+    [litros2] => 0.3
+    [distancia3] => 22.8
+    [llenado3] => 93.8
+    [litros3] => 18.8
+)
+
+2025-11-28 19:24:21 - REQUEST: Array
+(
+)
+
+2025-11-28 19:24:21 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:24:21
+
+2025-11-28 19:24:23 - REQUEST: Array
+(
+)
+
+2025-11-28 19:24:23 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:24:23
+
+2025-11-28 19:24:24 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 64.2
+    [llenado2] => 1.7
+    [litros2] => 0.3
+    [distancia3] => 22.6
+    [llenado3] => 94.2
+    [litros3] => 18.8
+)
+
+2025-11-28 19:24:25 - REQUEST: Array
+(
+)
+
+2025-11-28 19:24:25 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:24:25
+
+2025-11-28 19:24:26 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 64.5
+    [llenado2] => 1.1
+    [litros2] => 0.2
+    [distancia3] => 22.5
+    [llenado3] => 94.5
+    [litros3] => 18.9
+)
+
+2025-11-28 19:24:28 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 28.4
+    [llenado2] => 81.4
+    [litros2] => 16.3
+    [distancia3] => 22.6
+    [llenado3] => 94.3
+    [litros3] => 18.9
+)
+
+2025-11-28 19:24:30 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 64.1
+    [llenado2] => 2.0
+    [litros2] => 0.4
+    [distancia3] => 64.0
+    [llenado3] => 2.3
+    [litros3] => 0.5
+)
+
+2025-11-28 19:24:32 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 70.0
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 24.4
+    [llenado3] => 90.2
+    [litros3] => 18.0
+)
+
+2025-11-28 19:24:35 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 35.5
+    [llenado2] => 65.6
+    [litros2] => 13.1
+    [distancia3] => 24.9
+    [llenado3] => 89.2
+    [litros3] => 17.8
+)
+
+2025-11-28 19:24:37 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 20.1
+    [llenado2] => 99.9
+    [litros2] => 20.0
+    [distancia3] => 24.9
+    [llenado3] => 89.1
+    [litros3] => 17.8
+)
+
+2025-11-28 19:24:39 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 20.4
+    [llenado2] => 99.1
+    [litros2] => 19.8
+    [distancia3] => 24.8
+    [llenado3] => 89.4
+    [litros3] => 17.9
+)
+
+2025-11-28 19:24:41 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 20.4
+    [llenado2] => 99.1
+    [litros2] => 19.8
+    [distancia3] => 24.7
+    [llenado3] => 89.6
+    [litros3] => 17.9
+)
+
+2025-11-28 19:24:44 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 20.4
+    [llenado2] => 99.1
+    [litros2] => 19.8
+    [distancia3] => 24.7
+    [llenado3] => 89.6
+    [litros3] => 17.9
+)
+
+2025-11-28 19:24:46 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 20.4
+    [llenado2] => 99.1
+    [litros2] => 19.8
+    [distancia3] => 24.5
+    [llenado3] => 90.0
+    [litros3] => 18.0
+)
+
+2025-11-28 19:24:48 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 70.0
+    [llenado2] => 0.0
+    [litros2] => 0.0
+    [distancia3] => 24.4
+    [llenado3] => 90.3
+    [litros3] => 18.1
+)
+
+2025-11-28 19:24:50 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 63.1
+    [llenado2] => 4.3
+    [litros2] => 0.9
+    [distancia3] => 23.4
+    [llenado3] => 92.5
+    [litros3] => 18.5
+)
+
+2025-11-28 19:24:53 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 60.6
+    [llenado2] => 9.8
+    [litros2] => 2.0
+    [distancia3] => 23.6
+    [llenado3] => 92.1
+    [litros3] => 18.4
+)
+
+2025-11-28 19:24:55 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 60.0
+    [llenado2] => 11.1
+    [litros2] => 2.2
+    [distancia3] => 23.3
+    [llenado3] => 92.6
+    [litros3] => 18.5
+)
+
+2025-11-28 19:24:56 - REQUEST: Array
+(
+)
+
+2025-11-28 19:24:56 - === DATOS RECIBIDOS ===
+T1: N/A
+T2: N/A
+T3: N/A
+Insertados: 0/3
+Fecha: 2025-11-28 19:24:56
+
+2025-11-28 19:24:57 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 60.7
+    [llenado2] => 9.7
+    [litros2] => 1.9
+    [distancia3] => 23.2
+    [llenado3] => 93.0
+    [litros3] => 18.6
+)
+
+2025-11-28 19:24:59 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 59.2
+    [llenado2] => 12.9
+    [litros2] => 2.6
+    [distancia3] => 23.3
+    [llenado3] => 92.6
+    [litros3] => 18.5
+)
+
+2025-11-28 19:25:02 - REQUEST: Array
+(
+    [distancia1] => 70.0
+    [llenado1] => 0.0
+    [litros1] => 0.0
+    [distancia2] => 60.7
+    [llenado2] => 9.5
+    [litros2] => 1.9
+    [distancia3] => 23.6
+    [llenado3] => 92.1
+    [litros3] => 18.4
+)
+
+2025-11-28 19:32:19 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:19 - GET: {"distancia1":"32.0","llenado1":"73.3","litros1":"14.7","distancia2":"30.8","llenado2":"76.1","litros2":"15.2","distancia3":"67.2","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:32:22 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:22 - GET: {"distancia1":"20.2","llenado1":"99.6","litros1":"19.9","distancia2":"20.3","llenado2":"99.4","litros2":"19.9","distancia3":"63.1","llenado3":"4.3","litros3":"0.9"}
+2025-11-28 19:32:24 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:24 - GET: {"distancia1":"20.2","llenado1":"99.6","litros1":"19.9","distancia2":"25.2","llenado2":"88.5","litros2":"17.7","distancia3":"42.1","llenado3":"50.8","litros3":"10.2"}
+2025-11-28 19:32:26 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:26 - GET: {"distancia1":"20.1","llenado1":"99.7","litros1":"19.9","distancia2":"23.8","llenado2":"91.6","litros2":"18.3","distancia3":"63.4","llenado3":"3.6","litros3":"0.7"}
+2025-11-28 19:32:28 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:28 - GET: {"distancia1":"20.1","llenado1":"99.7","litros1":"19.9","distancia2":"23.3","llenado2":"92.6","litros2":"18.5","distancia3":"63.5","llenado3":"3.4","litros3":"0.7"}
+2025-11-28 19:32:31 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:31 - GET: {"distancia1":"20.2","llenado1":"99.6","litros1":"19.9","distancia2":"57.3","llenado2":"17.2","litros2":"3.4","distancia3":"64.5","llenado3":"1.2","litros3":"0.2"}
+2025-11-28 19:32:33 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:33 - GET: {"distancia1":"20.3","llenado1":"99.3","litros1":"19.9","distancia2":"20.0","llenado2":"99.9","litros2":"20.0","distancia3":"64.0","llenado3":"2.3","litros3":"0.5"}
+2025-11-28 19:32:35 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:35 - GET: {"distancia1":"20.4","llenado1":"99.2","litros1":"19.8","distancia2":"20.1","llenado2":"99.9","litros2":"20.0","distancia3":"40.9","llenado3":"53.6","litros3":"10.7"}
+2025-11-28 19:32:37 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:37 - GET: {"distancia1":"50.0","llenado1":"33.4","litros1":"6.7","distancia2":"20.3","llenado2":"99.4","litros2":"19.9","distancia3":"22.8","llenado3":"93.8","litros3":"18.8"}
+2025-11-28 19:32:39 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:39 - GET: {"distancia1":"27.2","llenado1":"83.9","litros1":"16.8","distancia2":"26.2","llenado2":"86.3","litros2":"17.3","distancia3":"20.0","llenado3":"100.0","litros3":"20.0"}
+2025-11-28 19:32:42 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:42 - GET: {"distancia1":"57.6","llenado1":"16.5","litros1":"3.3","distancia2":"64.9","llenado2":"0.3","litros2":"0.1","distancia3":"68.3","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:32:44 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:44 - GET: {"distancia1":"57.3","llenado1":"17.1","litros1":"3.4","distancia2":"70.1","llenado2":"0.0","litros2":"0.0","distancia3":"68.8","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:32:44 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:44 - GET: []
+2025-11-28 19:32:45 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:45 - GET: []
+2025-11-28 19:32:46 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:46 - GET: {"distancia1":"57.4","llenado1":"16.9","litros1":"3.4","distancia2":"70.2","llenado2":"0.0","litros2":"0.0","distancia3":"20.2","llenado3":"99.5","litros3":"19.9"}
+2025-11-28 19:32:47 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:47 - GET: []
+2025-11-28 19:32:48 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:48 - GET: {"distancia1":"57.4","llenado1":"16.8","litros1":"3.4","distancia2":"70.6","llenado2":"0.0","litros2":"0.0","distancia3":"33.3","llenado3":"70.5","litros3":"14.1"}
+2025-11-28 19:32:49 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:49 - GET: []
+2025-11-28 19:32:51 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:51 - GET: {"distancia1":"57.4","llenado1":"16.8","litros1":"3.4","distancia2":"70.1","llenado2":"0.0","litros2":"0.0","distancia3":"127.2","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:32:51 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:51 - GET: []
+2025-11-28 19:32:53 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:53 - GET: {"distancia1":"57.4","llenado1":"16.9","litros1":"3.4","distancia2":"70.1","llenado2":"0.0","litros2":"0.0","distancia3":"45.8","llenado3":"42.7","litros3":"8.5"}
+2025-11-28 19:32:53 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:53 - GET: []
+2025-11-28 19:32:55 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:55 - GET: {"distancia1":"57.3","llenado1":"17.1","litros1":"3.4","distancia2":"70.0","llenado2":"0.0","litros2":"0.0","distancia3":"49.0","llenado3":"35.5","litros3":"7.1"}
+2025-11-28 19:32:55 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:55 - GET: []
+2025-11-28 19:32:57 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:57 - GET: {"distancia1":"57.7","llenado1":"16.2","litros1":"3.2","distancia2":"70.0","llenado2":"0.0","litros2":"0.0","distancia3":"48.2","llenado3":"37.3","litros3":"7.5"}
+2025-11-28 19:32:57 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:57 - GET: []
+2025-11-28 19:32:59 - === REQUEST RECIBIDO ===
+2025-11-28 19:32:59 - GET: []
+2025-11-28 19:33:00 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:00 - GET: {"distancia1":"57.3","llenado1":"17.1","litros1":"3.4","distancia2":"70.1","llenado2":"0.0","litros2":"0.0","distancia3":"48.2","llenado3":"37.4","litros3":"7.5"}
+2025-11-28 19:33:01 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:01 - GET: []
+2025-11-28 19:33:02 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:02 - GET: {"distancia1":"57.2","llenado1":"17.3","litros1":"3.5","distancia2":"70.0","llenado2":"0.0","litros2":"0.0","distancia3":"49.0","llenado3":"35.5","litros3":"7.1"}
+2025-11-28 19:33:03 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:03 - GET: []
+2025-11-28 19:33:04 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:04 - GET: {"distancia1":"57.2","llenado1":"17.3","litros1":"3.5","distancia2":"70.0","llenado2":"0.0","litros2":"0.0","distancia3":"20.1","llenado3":"99.7","litros3":"19.9"}
+2025-11-28 19:33:05 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:05 - GET: []
+2025-11-28 19:33:06 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:06 - GET: {"distancia1":"57.1","llenado1":"17.5","litros1":"3.5","distancia2":"70.3","llenado2":"0.0","litros2":"0.0","distancia3":"48.6","llenado3":"36.4","litros3":"7.3"}
+2025-11-28 19:33:07 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:07 - GET: []
+2025-11-28 19:33:09 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:09 - GET: {"distancia1":"57.5","llenado1":"16.7","litros1":"3.3","distancia2":"70.3","llenado2":"0.0","litros2":"0.0","distancia3":"48.6","llenado3":"36.6","litros3":"7.3"}
+2025-11-28 19:33:09 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:09 - GET: []
+2025-11-28 19:33:11 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:11 - GET: {"distancia1":"57.1","llenado1":"17.5","litros1":"3.5","distancia2":"64.4","llenado2":"1.4","litros2":"0.3","distancia3":"42.7","llenado3":"49.5","litros3":"9.9"}
+2025-11-28 19:33:11 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:11 - GET: []
+2025-11-28 19:33:13 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:13 - GET: {"distancia1":"57.3","llenado1":"17.2","litros1":"3.4","distancia2":"71.8","llenado2":"0.0","litros2":"0.0","distancia3":"42.7","llenado3":"49.5","litros3":"9.9"}
+2025-11-28 19:33:13 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:13 - GET: []
+2025-11-28 19:33:15 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:15 - GET: {"distancia1":"57.2","llenado1":"17.4","litros1":"3.5","distancia2":"72.1","llenado2":"0.0","litros2":"0.0","distancia3":"42.7","llenado3":"49.5","litros3":"9.9"}
+2025-11-28 19:33:15 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:15 - GET: []
+2025-11-28 19:33:17 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:17 - GET: []
+2025-11-28 19:33:17 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:17 - GET: {"distancia1":"57.3","llenado1":"17.2","litros1":"3.4","distancia2":"71.8","llenado2":"0.0","litros2":"0.0","distancia3":"42.7","llenado3":"49.5","litros3":"9.9"}
+2025-11-28 19:33:19 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:19 - GET: []
+2025-11-28 19:33:20 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:20 - GET: {"distancia1":"57.3","llenado1":"17.1","litros1":"3.4","distancia2":"71.8","llenado2":"0.0","litros2":"0.0","distancia3":"42.7","llenado3":"49.5","litros3":"9.9"}
+2025-11-28 19:33:22 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:22 - GET: []
+2025-11-28 19:33:22 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:22 - GET: {"distancia1":"57.3","llenado1":"17.1","litros1":"3.4","distancia2":"89.2","llenado2":"0.0","litros2":"0.0","distancia3":"42.7","llenado3":"49.5","litros3":"9.9"}
+2025-11-28 19:33:23 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:23 - GET: []
+2025-11-28 19:33:24 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:24 - GET: {"distancia1":"57.3","llenado1":"17.2","litros1":"3.4","distancia2":"89.3","llenado2":"0.0","litros2":"0.0","distancia3":"20.0","llenado3":"100.0","litros3":"20.0"}
+2025-11-28 19:33:25 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:25 - GET: []
+2025-11-28 19:33:27 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:27 - GET: {"distancia1":"57.3","llenado1":"17.1","litros1":"3.4","distancia2":"71.3","llenado2":"0.0","litros2":"0.0","distancia3":"42.7","llenado3":"49.5","litros3":"9.9"}
+2025-11-28 19:33:27 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:27 - GET: []
+2025-11-28 19:33:29 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:29 - GET: {"distancia1":"57.4","llenado1":"16.8","litros1":"3.4","distancia2":"70.6","llenado2":"0.0","litros2":"0.0","distancia3":"42.8","llenado3":"49.4","litros3":"9.9"}
+2025-11-28 19:33:29 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:29 - GET: []
+2025-11-28 19:33:31 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:31 - GET: {"distancia1":"57.3","llenado1":"17.2","litros1":"3.4","distancia2":"71.4","llenado2":"0.0","litros2":"0.0","distancia3":"42.7","llenado3":"49.5","litros3":"9.9"}
+2025-11-28 19:33:31 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:31 - GET: []
+2025-11-28 19:33:33 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:33 - GET: []
+2025-11-28 19:33:33 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:33 - GET: {"distancia1":"57.3","llenado1":"17.1","litros1":"3.4","distancia2":"70.9","llenado2":"0.0","litros2":"0.0","distancia3":"42.7","llenado3":"49.5","litros3":"9.9"}
+2025-11-28 19:33:35 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:35 - GET: []
+2025-11-28 19:33:36 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:36 - GET: {"distancia1":"57.7","llenado1":"16.2","litros1":"3.2","distancia2":"71.0","llenado2":"0.0","litros2":"0.0","distancia3":"42.7","llenado3":"49.5","litros3":"9.9"}
+2025-11-28 19:33:36 - Datos recibidos: T1=16.2%, T2=0%, T3=49.5%
+2025-11-28 19:33:37 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:37 - GET: []
+2025-11-28 19:33:38 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:38 - GET: {"distancia1":"57.4","llenado1":"16.8","litros1":"3.4","distancia2":"70.7","llenado2":"0.0","litros2":"0.0","distancia3":"42.7","llenado3":"49.5","litros3":"9.9"}
+2025-11-28 19:33:38 - Datos recibidos: T1=16.8%, T2=0%, T3=49.5%
+2025-11-28 19:33:39 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:39 - GET: []
+2025-11-28 19:33:40 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:40 - GET: {"distancia1":"57.6","llenado1":"16.4","litros1":"3.3","distancia2":"70.0","llenado2":"0.0","litros2":"0.0","distancia3":"43.1","llenado3":"48.6","litros3":"9.7"}
+2025-11-28 19:33:40 - Datos recibidos: T1=16.4%, T2=0%, T3=48.6%
+2025-11-28 19:33:41 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:41 - GET: []
+2025-11-28 19:33:42 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:42 - GET: {"distancia1":"57.5","llenado1":"16.7","litros1":"3.3","distancia2":"70.7","llenado2":"0.0","litros2":"0.0","distancia3":"20.0","llenado3":"100.0","litros3":"20.0"}
+2025-11-28 19:33:42 - Datos recibidos: T1=16.7%, T2=0%, T3=100%
+2025-11-28 19:33:43 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:43 - GET: []
+2025-11-28 19:33:45 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:45 - GET: {"distancia1":"57.4","llenado1":"16.8","litros1":"3.4","distancia2":"71.0","llenado2":"0.0","litros2":"0.0","distancia3":"42.7","llenado3":"49.5","litros3":"9.9"}
+2025-11-28 19:33:45 - Datos recibidos: T1=16.8%, T2=0%, T3=49.5%
+2025-11-28 19:33:45 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:45 - GET: []
+2025-11-28 19:33:47 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:47 - GET: {"distancia1":"57.5","llenado1":"16.6","litros1":"3.3","distancia2":"70.3","llenado2":"0.0","litros2":"0.0","distancia3":"20.0","llenado3":"100.0","litros3":"20.0"}
+2025-11-28 19:33:47 - Datos recibidos: T1=16.6%, T2=0%, T3=100%
+2025-11-28 19:33:49 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:49 - GET: {"distancia1":"57.5","llenado1":"16.6","litros1":"3.3","distancia2":"69.9","llenado2":"0.0","litros2":"0.0","distancia3":"42.7","llenado3":"49.5","litros3":"9.9"}
+2025-11-28 19:33:49 - Datos recibidos: T1=16.6%, T2=0%, T3=49.5%
+2025-11-28 19:33:51 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:51 - GET: {"distancia1":"57.6","llenado1":"16.4","litros1":"3.3","distancia2":"70.0","llenado2":"0.0","litros2":"0.0","distancia3":"20.0","llenado3":"100.0","litros3":"20.0"}
+2025-11-28 19:33:51 - Datos recibidos: T1=16.4%, T2=0%, T3=100%
+2025-11-28 19:33:54 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:54 - GET: {"distancia1":"57.7","llenado1":"16.3","litros1":"3.3","distancia2":"70.0","llenado2":"0.0","litros2":"0.0","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:33:54 - Datos recibidos: T1=16.3%, T2=0%, T3=0%
+2025-11-28 19:33:56 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:56 - GET: {"distancia1":"57.2","llenado1":"17.4","litros1":"3.5","distancia2":"69.9","llenado2":"0.0","litros2":"0.0","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:33:56 - Datos recibidos: T1=17.4%, T2=0%, T3=0%
+2025-11-28 19:33:58 - === REQUEST RECIBIDO ===
+2025-11-28 19:33:58 - GET: {"distancia1":"57.5","llenado1":"16.7","litros1":"3.3","distancia2":"71.0","llenado2":"0.0","litros2":"0.0","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:33:58 - Datos recibidos: T1=16.7%, T2=0%, T3=0%
+2025-11-28 19:34:00 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:00 - GET: {"distancia1":"57.5","llenado1":"16.7","litros1":"3.3","distancia2":"71.3","llenado2":"0.0","litros2":"0.0","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:00 - Datos recibidos: T1=16.7%, T2=0%, T3=0%
+2025-11-28 19:34:03 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:03 - GET: {"distancia1":"57.6","llenado1":"16.5","litros1":"3.3","distancia2":"71.0","llenado2":"0.0","litros2":"0.0","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:03 - Datos recibidos: T1=16.5%, T2=0%, T3=0%
+2025-11-28 19:34:05 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:05 - GET: {"distancia1":"57.6","llenado1":"16.5","litros1":"3.3","distancia2":"70.9","llenado2":"0.0","litros2":"0.0","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:05 - Datos recibidos: T1=16.5%, T2=0%, T3=0%
+2025-11-28 19:34:07 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:07 - GET: {"distancia1":"212.6","llenado1":"0.0","litros1":"0.0","distancia2":"72.0","llenado2":"0.0","litros2":"0.0","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:07 - Datos recibidos: T1=0%, T2=0%, T3=0%
+2025-11-28 19:34:09 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:09 - GET: {"distancia1":"211.5","llenado1":"0.0","litros1":"0.0","distancia2":"72.0","llenado2":"0.0","litros2":"0.0","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:09 - Datos recibidos: T1=0%, T2=0%, T3=0%
+2025-11-28 19:34:11 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:11 - GET: {"distancia1":"212.9","llenado1":"0.0","litros1":"0.0","distancia2":"72.0","llenado2":"0.0","litros2":"0.0","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:11 - Datos recibidos: T1=0%, T2=0%, T3=0%
+2025-11-28 19:34:14 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:14 - GET: {"distancia1":"212.7","llenado1":"0.0","litros1":"0.0","distancia2":"64.4","llenado2":"1.2","litros2":"0.2","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:14 - Datos recibidos: T1=0%, T2=1.2%, T3=0%
+2025-11-28 19:34:16 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:16 - GET: {"distancia1":"211.6","llenado1":"0.0","litros1":"0.0","distancia2":"71.6","llenado2":"0.0","litros2":"0.0","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:16 - Datos recibidos: T1=0%, T2=0%, T3=0%
+2025-11-28 19:34:18 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:18 - GET: {"distancia1":"213.9","llenado1":"0.0","litros1":"0.0","distancia2":"72.1","llenado2":"0.0","litros2":"0.0","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:18 - Datos recibidos: T1=0%, T2=0%, T3=0%
+2025-11-28 19:34:20 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:20 - GET: []
+2025-11-28 19:34:20 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:20 - GET: {"distancia1":"23.0","llenado1":"93.3","litros1":"18.7","distancia2":"71.1","llenado2":"0.0","litros2":"0.0","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:20 - Datos recibidos: T1=93.3%, T2=0%, T3=0%
+2025-11-28 19:34:22 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:22 - GET: []
+2025-11-28 19:34:23 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:23 - GET: {"distancia1":"74.3","llenado1":"0.0","litros1":"0.0","distancia2":"64.8","llenado2":"0.5","litros2":"0.1","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:23 - Datos recibidos: T1=0%, T2=0.5%, T3=0%
+2025-11-28 19:34:24 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:24 - GET: []
+2025-11-28 19:34:25 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:25 - GET: {"distancia1":"211.4","llenado1":"0.0","litros1":"0.0","distancia2":"69.3","llenado2":"0.0","litros2":"0.0","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:25 - Datos recibidos: T1=0%, T2=0%, T3=0%
+2025-11-28 19:34:26 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:26 - GET: []
+2025-11-28 19:34:27 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:27 - GET: {"distancia1":"35.3","llenado1":"66.0","litros1":"13.2","distancia2":"20.3","llenado2":"99.4","litros2":"19.9","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:27 - Datos recibidos: T1=66%, T2=99.4%, T3=0%
+2025-11-28 19:34:28 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:28 - GET: []
+2025-11-28 19:34:29 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:29 - GET: {"distancia1":"27.2","llenado1":"84.0","litros1":"16.8","distancia2":"20.0","llenado2":"99.9","litros2":"20.0","distancia3":"32.8","llenado3":"71.5","litros3":"14.3"}
+2025-11-28 19:34:29 - Datos recibidos: T1=84%, T2=99.9%, T3=71.5%
+2025-11-28 19:34:30 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:30 - GET: []
+2025-11-28 19:34:31 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:31 - GET: {"distancia1":"25.9","llenado1":"86.8","litros1":"17.4","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"213.8","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:31 - Datos recibidos: T1=86.8%, T2=99.5%, T3=0%
+2025-11-28 19:34:32 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:32 - GET: []
+2025-11-28 19:34:34 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:34 - GET: {"distancia1":"24.5","llenado1":"90.0","litros1":"18.0","distancia2":"20.0","llenado2":"99.9","litros2":"20.0","distancia3":"216.2","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:34 - Datos recibidos: T1=90%, T2=99.9%, T3=0%
+2025-11-28 19:34:36 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:36 - GET: {"distancia1":"30.5","llenado1":"76.7","litros1":"15.3","distancia2":"20.3","llenado2":"99.2","litros2":"19.8","distancia3":"74.4","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:36 - Datos recibidos: T1=76.7%, T2=99.2%, T3=0%
+2025-11-28 19:34:38 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:38 - GET: {"distancia1":"31.4","llenado1":"74.6","litros1":"14.9","distancia2":"20.3","llenado2":"99.4","litros2":"19.9","distancia3":"216.8","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:38 - Datos recibidos: T1=74.6%, T2=99.4%, T3=0%
+2025-11-28 19:34:40 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:40 - GET: {"distancia1":"28.8","llenado1":"80.3","litros1":"16.1","distancia2":"20.1","llenado2":"99.8","litros2":"20.0","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:40 - Datos recibidos: T1=80.3%, T2=99.8%, T3=0%
+2025-11-28 19:34:43 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:43 - GET: {"distancia1":"31.1","llenado1":"75.3","litros1":"15.1","distancia2":"20.2","llenado2":"99.6","litros2":"19.9","distancia3":"218.2","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:43 - Datos recibidos: T1=75.3%, T2=99.6%, T3=0%
+2025-11-28 19:34:45 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:45 - GET: {"distancia1":"76.9","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.6","litros2":"19.9","distancia3":"217.8","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:45 - Datos recibidos: T1=0%, T2=99.6%, T3=0%
+2025-11-28 19:34:47 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:47 - GET: {"distancia1":"70.0","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.6","litros2":"19.9","distancia3":"219.8","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:47 - Datos recibidos: T1=0%, T2=99.6%, T3=0%
+2025-11-28 19:34:49 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:49 - GET: {"distancia1":"227.8","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"57.8","llenado3":"16.0","litros3":"3.2"}
+2025-11-28 19:34:49 - Datos recibidos: T1=0%, T2=99.5%, T3=16%
+2025-11-28 19:34:52 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:52 - GET: {"distancia1":"227.8","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"71.6","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:52 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:34:54 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:54 - GET: {"distancia1":"227.3","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"71.4","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:54 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:34:56 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:56 - GET: {"distancia1":"227.9","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"71.8","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:56 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:34:58 - === REQUEST RECIBIDO ===
+2025-11-28 19:34:58 - GET: {"distancia1":"227.8","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"75.1","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:34:58 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:35:01 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:01 - GET: {"distancia1":"227.9","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"69.7","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:01 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:35:03 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:03 - GET: {"distancia1":"227.9","llenado1":"0.0","litros1":"0.0","distancia2":"20.3","llenado2":"99.4","litros2":"19.9","distancia3":"67.3","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:03 - Datos recibidos: T1=0%, T2=99.4%, T3=0%
+2025-11-28 19:35:05 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:05 - GET: {"distancia1":"227.9","llenado1":"0.0","litros1":"0.0","distancia2":"20.3","llenado2":"99.4","litros2":"19.9","distancia3":"69.5","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:05 - Datos recibidos: T1=0%, T2=99.4%, T3=0%
+2025-11-28 19:35:07 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:07 - GET: {"distancia1":"227.9","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"62.9","llenado3":"4.7","litros3":"0.9"}
+2025-11-28 19:35:07 - Datos recibidos: T1=0%, T2=99.5%, T3=4.7%
+2025-11-28 19:35:09 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:09 - GET: {"distancia1":"227.4","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"67.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:09 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:35:12 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:12 - GET: {"distancia1":"227.5","llenado1":"0.0","litros1":"0.0","distancia2":"20.3","llenado2":"99.4","litros2":"19.9","distancia3":"68.2","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:12 - Datos recibidos: T1=0%, T2=99.4%, T3=0%
+2025-11-28 19:35:14 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:14 - GET: {"distancia1":"227.5","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"67.6","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:14 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:35:16 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:16 - GET: {"distancia1":"227.8","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"83.7","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:16 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:35:19 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:19 - GET: {"distancia1":"227.9","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:19 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:35:21 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:21 - GET: {"distancia1":"228.3","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"64.2","llenado3":"1.9","litros3":"0.4"}
+2025-11-28 19:35:21 - Datos recibidos: T1=0%, T2=99.5%, T3=1.9%
+2025-11-28 19:35:24 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:24 - GET: {"distancia1":"227.6","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"69.5","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:24 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:35:26 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:26 - GET: {"distancia1":"227.4","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"71.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:26 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:35:28 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:28 - GET: {"distancia1":"227.1","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"73.7","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:28 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:35:30 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:30 - GET: {"distancia1":"227.9","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"70.2","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:30 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:35:32 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:32 - GET: {"distancia1":"228.4","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"71.2","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:32 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:35:35 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:35 - GET: {"distancia1":"227.9","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"74.6","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:35 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:35:37 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:37 - GET: {"distancia1":"227.6","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"77.6","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:37 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:35:39 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:39 - GET: {"distancia1":"28.5","llenado1":"81.1","litros1":"16.2","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"47.1","llenado3":"39.8","litros3":"8.0"}
+2025-11-28 19:35:39 - Datos recibidos: T1=81.1%, T2=99.5%, T3=39.8%
+2025-11-28 19:35:41 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:41 - GET: {"distancia1":"36.1","llenado1":"64.2","litros1":"12.8","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:41 - Datos recibidos: T1=64.2%, T2=99.5%, T3=0%
+2025-11-28 19:35:44 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:44 - GET: {"distancia1":"227.2","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"70.0","llenado3":"0.0","litros3":"0.0"}
+2025-11-28 19:35:44 - Datos recibidos: T1=0%, T2=99.5%, T3=0%
+2025-11-28 19:35:46 - === REQUEST RECIBIDO ===
+2025-11-28 19:35:46 - GET: {"distancia1":"227.3","llenado1":"0.0","litros1":"0.0","distancia2":"20.2","llenado2":"99.5","litros2":"19.9","distancia3":"50.7","llenado3":"31.7","litros3":"6.3"}
+2025-11-28 19:35:46 - Datos recibidos: T1=0%, T2=99.5%, T3=31.7%

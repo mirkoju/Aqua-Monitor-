@@ -14,7 +14,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($nueva !== $repetir) {
         $error = "Las contraseñas no coinciden.";
     } else {
-        $conex = mysqli_connect("localhost", "root", "", "nusuario");
+        require_once 'con_db.php';
+        $conex = $conex;
+        if (!$conex) {
+            die("Error de conexión: " . mysqli_connect_error());
+        }
         $hash = password_hash($nueva, PASSWORD_DEFAULT);
         mysqli_query($conex, "UPDATE registronuevo SET pass = '$hash' WHERE email = '$email'");
 

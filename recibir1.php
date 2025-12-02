@@ -1,13 +1,11 @@
 <?php
 header('Content-Type: text/plain; charset=utf-8');
 header('Refresh: 5');
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db = "nusuario";
-$conn = new mysqli($host, $user, $pass, $db);
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+// Usar conexión centralizada (con_db.php)
+require_once 'con_db.php';
+$conn = $conex; // alias para mantener compatibilidad con el resto del archivo
+if (!$conn) {
+    die("Conexión fallida: " . mysqli_connect_error());
 }
 
 // Parámetros del tacho (igual que en el microcontrolador)
@@ -54,16 +52,16 @@ if (isset($_GET['distancia1']) || isset($_GET['distancia'])) {
         $sql1 = "INSERT INTO historial_agua (tanque_id, tanque, porcentaje, estado) VALUES (1, 'Tacho 20L - 1', " . round($llenado1,1) . ", 'normal')";
         $conn->query($sql1);
         if ($llenado1 < $umbral_alerta) {
-            $sql_alerta1 = "INSERT INTO alertas_llenado (tanque, porcentaje, estado) VALUES ('Tacho 20L - 1', " . round($llenado1,1) . ", 'no leida')";
-            $conn->query($sql_alerta1);
+            // { changed code }
+            enviar_alerta($conn, 'Tacho 20L - 1', $llenado1);
         }
     }
     if ($llenado2 !== null) {
         $sql2 = "INSERT INTO historial_agua (tanque_id, tanque, porcentaje, estado) VALUES (2, 'Tacho 20L - 2', " . round($llenado2,1) . ", 'normal')";
         $conn->query($sql2);
         if ($llenado2 < $umbral_alerta) {
-            $sql_alerta2 = "INSERT INTO alertas_llenado (tanque, porcentaje, estado) VALUES ('Tacho 20L - 2', " . round($llenado2,1) . ", 'no leida')";
-            $conn->query($sql_alerta2);
+            // { changed code }
+            enviar_alerta($conn, 'Tacho 20L - 2', $llenado2);
         }
     }
 
